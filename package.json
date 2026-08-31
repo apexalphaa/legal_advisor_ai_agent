@@ -1,0 +1,28 @@
+{
+  "name": "courtcases-ai-agent",
+  "version": "0.1.0",
+  "description": "Standalone AI agent for Indian legal research: query enhancement, Indian Kanoon case search, and LLM-based case summarization.",
+  "type": "module",
+  "main": "agent.js",
+  "scripts": {
+    "start": "node agent.js",
+    "start:api": "node src/server.js",
+    "start:bot": "node src/telegramBot.js",
+    "test:module1": "node scripts/test-query-enhancer.js",
+    "test:module2": "node scripts/test-case-search.js",
+    "test:module3": "node scripts/test-doc-fetch.js",
+    "test:module4": "node scripts/test-summarizer.js",
+    "test:module5": "node scripts/test-synthesis.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

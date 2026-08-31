@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/*.json
+!data/.gitkeep
+
+# Personal Claude Code tool permissions, not project config
+.claude/settings.local.json
